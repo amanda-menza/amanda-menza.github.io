@@ -1,3 +1,7 @@
+/* code that trained a BoeBot to follow a dark line path, identify a color corresponsing to a country,
+calculate threshold from photo transistor to determine if object reflectivity corresponds to metal or not,
+and communicate/recieve results to other BoeBots*/
+
 #define Rx 17 // DOUT to pin 17 
 #define Tx 16 // DIN to pin 16
 const int ledY = 9; //button responds to pin 9
