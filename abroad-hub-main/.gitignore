@@ -1,0 +1,32 @@
+# Ignore virtual environment folders
+venv/
+.venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore IDE/editor-specific files (e.g., VSCode, PyCharm)
+.vscode/
+.idea/
+
+.env
+node_modules/
+static/
+audit.log
+
+backend/media/
+media/essential_documents/
+
+build/ 
+.next/
+static/
+
+backend/media/essential_documents
+
+# Properly ignore all log files
+*.log
+**/audit.log
+
+logs/
+backend/media/recommendation_letters/

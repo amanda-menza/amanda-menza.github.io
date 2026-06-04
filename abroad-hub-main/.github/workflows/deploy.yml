@@ -1,0 +1,95 @@
+name: Deploy Abroad Hubb
+
+on:
+  push:
+    branches: [main, build-fix]
+  pull_request:
+    branches: [main, build-fix]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_DB: abroadhub
+          POSTGRES_USER: ${{ secrets.DB_USER }}
+          POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Set up Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run Django tests
+        working-directory: backend
+        env:
+          DJANGO_SETTINGS_MODULE: backend.settings
+          DB_NAME: abroadhub
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PWD: ${{ secrets.DB_PASSWORD }}
+          DB_HOST: localhost
+          DB_PORT: 5432
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        run: |
+          python manage.py test
+
+      - name: Install Node dependencies
+        working-directory: frontend
+        run: npm install
+
+      # - name: Run frontend tests
+      #   working-directory: frontend
+      #   run: npm run test
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: abroad.colab.duke.edu
+          username: jc870
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            # Install Node.js if not present
+            if ! command -v node &> /dev/null; then
+              curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+              sudo apt-get install -y nodejs
+            fi
+
+            # Install PM2 globally if not present
+            if ! command -v pm2 &> /dev/null; then
+              sudo npm install -g pm2
+            fi
+
+            # Your existing deployment commands
+            cd /home/jc870/abroad-hub
+            git pull
+            cd frontend
+            npm install
+            npm run build
+            cd ../backend
+            source venv/bin/activate
+            pip install -r requirements.txt
+            cd ..
+            pm2 restart all

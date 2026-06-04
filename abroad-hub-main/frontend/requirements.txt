@@ -1,0 +1,15 @@
+npm install axios react-router-dom jwt-decode
+npx shadcn@latest add alert-dialog
+npx shadcn@latest add form
+npx shadcn@latest add select
+npx shadcn@latest add table
+npm install @tanstack/react-table
+npx shadcn@latest add checkbo
+npx shadcn@latest add toast
+npm install react-quill --legacy-peer-deps
+npm install --save-dev tailwindcss --legacy-peer-deps
+npm install quill@2.0.3 --legacy-peer-deps
+npm install date-fns --legacy-peer-deps
+npm install --save lexical @lexical/react --legacy-peeer-
+
+npm install @testing-library/react @testing-library/jest-dom jest msw --save-dev
