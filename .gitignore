@@ -1,0 +1,38 @@
+.DS_Store
+
+# OS/editor files
+.idea/
+.vscode/
+*.iml
+
+# Java/Gradle outputs
+**/.gradle/
+**/build/
+**/out/
+**/bin/
+*.class
+*.hprof
+
+# Keep wrapper jars, but ignore generated assignment/application jars by default.
+*.jar
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# JavaFX SDKs should be installed or resolved by Gradle, not committed.
+**/javafx-sdk-*/
+
+# Node/Next outputs
+**/node_modules/
+**/.next/
+
+# Python outputs and local env
+**/__pycache__/
+*.pyc
+**/.venv/
+**/venv/
+
+# Flutter/Dart outputs
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/flutter_application/build/

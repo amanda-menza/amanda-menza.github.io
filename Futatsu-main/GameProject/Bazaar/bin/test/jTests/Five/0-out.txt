@@ -1,8 +1,0 @@
-red -> green
-red -> green
-
-[{false,[red,green,blue,red,green]}]
-
-5
-
-[]

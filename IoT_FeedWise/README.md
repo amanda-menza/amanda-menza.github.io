@@ -1,38 +1,93 @@
-## FeedWise IoT Project Code
+# FeedWise IoT Smart Feeder
 
-### ESP32 Code
+FeedWise is an IoT pet-feeding prototype made of two connected parts:
 
-**Directory**: `esp32_code/main/main.c`
+- ESP32 firmware that reads RFID and weight sensors, controls servo motors, and communicates with a remote database/API.
+- A Flutter app that displays feeding data and allows users to adjust feeder settings or force a dispense action.
 
-**Functionality**:
+## Project structure
 
-- initializes HX711 and RC522 sensors
-- initializes standard and 360 servo motors
-- connects to wifi for making http post requests to aws database and handling post requests from flutter app.
-- on RFID card detection, servo motors activated based on validity of time interval and weight threshold conditions.
+| Path | Purpose |
+| --- | --- |
+| `esp32_code/` | ESP-IDF firmware project for the feeder hardware. |
+| `esp32_code/main/main.c` | Main firmware entry point: sensor setup, Wi-Fi, HTTP communication, RFID handling, weight thresholds, and servo control. |
+| `esp32_code/main/idf_component.yml` | ESP-IDF component manifest. |
+| `flutter_application/` | Flutter mobile app. |
+| `flutter_application/lib/pages/` | Home, data, settings, and navigation pages. |
+| `flutter_application/lib/charts/` | Bar and line chart widgets for feeding trends. |
+| `flutter_application/lib/models/` | Data models for settings, detection data, and weight data. |
+| `flutter_application/assets/` | App logo assets. |
 
-**Resources**:
+## Hardware responsibilities
 
-- RC522 library: https://github.com/abobija/esp-idf-rc522
-- HX711 library: https://github.com/UncleRus/esp-idf-lib/tree/master/components/hx711
-- Servo library: https://github.com/Melek-Cherif/motor_control_esp32/tree/main/components/servo_motor
+The firmware coordinates:
 
-## Flutter App Code
+- RC522 RFID reads to identify an animal/card.
+- HX711 weight measurements to evaluate feed amount.
+- Standard and continuous-rotation servo motors for dispenser movement.
+- Wi-Fi connection and HTTP requests to the backend/database.
+- Time-window and weight-threshold checks before dispensing.
 
-**Main Directory**: `flutter_application/lib`
+## Firmware setup
 
-- `main.dart` runs the application
+Install ESP-IDF, then configure the project from `esp32_code/`:
 
-**Sub Directories**:
+```bash
+cd esp32_code
+idf.py set-target esp32
+idf.py menuconfig
+idf.py build
+idf.py flash monitor
+```
 
-- `/charts`
-  - contains bar chart and line chart code that appear on data page.
-  - both widgets use http get requests to fetch from database.
-- `/models`
-  - creates one class for each of the two tables in the database to accept response.
-  - creates a settings model to hold user specified settings.
-- `/pages`
-  - home page with logo
-  - settings page for user specifications
-  - data page for viewing the feeding trends or forcing dispension
-  - main page organizes the 3 page options to visibly show the chosen screen
+External component references:
+
+- RC522: `https://github.com/abobija/esp-idf-rc522`
+- HX711: `https://github.com/UncleRus/esp-idf-lib/tree/master/components/hx711`
+- Servo: `https://github.com/Melek-Cherif/motor_control_esp32/tree/main/components/servo_motor`
+
+If you use `esp-idf-lib`, set `ESP_IDF_LIB_PATH` before building:
+
+```bash
+export ESP_IDF_LIB_PATH=/path/to/esp-idf-lib
+```
+
+## Flutter app setup
+
+Install Flutter, then run:
+
+```bash
+cd flutter_application
+flutter pub get
+flutter run
+```
+
+Useful commands:
+
+```bash
+flutter analyze
+flutter test
+flutter build ios
+flutter build apk
+```
+
+## App screens
+
+- `home_page.dart` displays the branded home screen.
+- `data_page.dart` fetches and visualizes feeding data.
+- `settings_page.dart` lets the user update feeding configuration.
+- `main_page.dart` organizes the app-level navigation.
+
+## Data flow
+
+1. The ESP32 detects RFID input and reads feeder weight.
+2. Firmware checks configured time and weight rules.
+3. If dispensing is allowed, the servo system activates.
+4. Firmware posts feeding events and measurements to the remote service.
+5. The Flutter app fetches those records and renders trends/settings.
+
+## Maintenance notes
+
+- Keep `.DS_Store` files out of git.
+- Keep generated Flutter build output, `.dart_tool/`, and platform build caches out of git.
+- Document the production API/database endpoint before handing the project to another developer.
