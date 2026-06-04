@@ -1,6 +1,0 @@
-red green = blue blue blue blue
-green green green = red
-
-red green
-
-blue blue blue blue

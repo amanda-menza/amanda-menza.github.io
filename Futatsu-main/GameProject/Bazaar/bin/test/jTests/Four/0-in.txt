@@ -1,7 +1,0 @@
-[red]
-
-[]
-
-[{20,[red,red,blue,red,red]},{6,[red]}]
-
-[{false,[green,green,green,green,green]},{false,[red,red,blue,red,red]},{false,[red,green,blue,red,green]}]

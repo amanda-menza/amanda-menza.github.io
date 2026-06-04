@@ -1,6 +1,0 @@
-
-[{false,[red,green,blue,red,green]}]
-
-1
-
-[blue,green,green,white,white,yellow]
