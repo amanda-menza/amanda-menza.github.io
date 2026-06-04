@@ -1,0 +1,10 @@
+green -> blue blue red yellow
+blue blue blue blue -> white yellow
+green -> blue blue red yellow
+white -> blue yellow
+
+[{false,[blue,red,white,yellow,yellow]},{true,[blue,green,green,yellow,yellow]},{true,[blue,red,red,red,yellow]}]
+
+8
+
+[white]

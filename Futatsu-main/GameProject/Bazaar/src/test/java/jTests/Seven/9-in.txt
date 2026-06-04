@@ -1,0 +1,10 @@
+[]
+
+[[[blue],[green]]]
+[[[blue,blue],[red,red]]]
+[[[green,green,green],[red,red]]]
+
+{[red,red,blue,red,red,green],
+[],
+[],
+[{true,[white,yellow,red,blue,blue]},{false,[green,green,green,green,green]},{true,[white,yellow,red,red,red]}]}

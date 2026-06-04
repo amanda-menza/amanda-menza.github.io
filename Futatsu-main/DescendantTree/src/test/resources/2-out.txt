@@ -1,0 +1,4 @@
+Enter your text(CTRL+D when finished):
+path from "Anne" to "Jaen" is #f
+path from "Anne" to "Juliette" is ("mother", "father", "father")
+path from "Anne" to "Jean" is ("mother", "father", "father", "mother")

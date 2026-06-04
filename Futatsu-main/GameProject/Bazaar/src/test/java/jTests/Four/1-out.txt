@@ -1,0 +1,7 @@
+6,[red]
+
+[green,green,green,green,green]
+
+[]
+
+[]

@@ -1,0 +1,9 @@
+red -> green green green
+yellow green green -> white blue red red
+green -> red yellow blue blue
+
+[{false,[red,green,blue,red,green]},{false,[yellow,yellow,blue,white,red]}]
+
+2
+
+[blue,blue,white]

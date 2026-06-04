@@ -1,0 +1,10 @@
+[[Zeina,purchase-size],[Yolanda,purchase-points,request-cards],[Adam,purchase-points]]
+
+[[[blue],[green]]]
+[[[blue,blue],[red,red]]]
+[[[green,green,green],[red,red]]]
+
+{[red,red,blue,red,red,green],
+[],
+[{0,[white,yellow,red,blue,green]},{0,[red,green,blue,red,green]},{0,[white,yellow,red,blue,blue]}],
+[]}

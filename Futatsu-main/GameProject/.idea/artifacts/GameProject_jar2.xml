@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GameProject:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/GameProject_jar2</output-path>
+    <root id="archive" name="GameProject.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Bazaar/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="GameProject.Bazaar.main" />
+      <element id="module-source" name="GameProject.Bazaar.main" />
+    </root>
+  </artifact>
+</component>

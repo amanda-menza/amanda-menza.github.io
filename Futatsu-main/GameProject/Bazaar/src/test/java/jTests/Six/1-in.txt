@@ -1,0 +1,8 @@
+[blue blue blue blue = red green]
+
+[]
+
+{9,[green,green,green]}
+[red,green]
+[]
+[]

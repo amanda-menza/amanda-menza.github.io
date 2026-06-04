@@ -1,0 +1,7 @@
+20,[red,red,blue,red,red]
+
+[red]
+
+[{false,[green,green,green,green,green]}]
+
+[6]

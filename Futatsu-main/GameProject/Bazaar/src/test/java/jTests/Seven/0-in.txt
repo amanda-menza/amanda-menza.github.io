@@ -1,0 +1,8 @@
+[[Adam,purchase-points],[Eve,purchase-size]]
+
+[]
+
+{[red],
+ [],
+ [{20,[red,red,blue,red,red]},{6,[red]}],
+ [{false,[green,green,green,green,green]}]}

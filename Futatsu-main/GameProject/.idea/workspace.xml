@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GameProject.Bazaar.test:jar6" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="89d0dd93-7cf1-40ef-ac77-61e82d346498" name="Changes" comment="fix read me path and jar name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-M6.md" beforeDir="false" afterPath="$PROJECT_DIR$/README-M6.md" afterDir="false" />
+    </list>
+    <list id="91fd10c0-d88b-4ad3-95cf-0ab5b741d19a" name="Changes by joaocarvalho" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GameProject" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GameProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GameProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;amanda-menza&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ECE495-F24-PairProgramming/Futatsu.git&quot;,
+    &quot;accountId&quot;: &quot;7e51a380-5d89-4cc7-9f0e-3394cfc7c33c&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+    &quot;associatedIndex&quot;: 4
+    }</component>
+  <component name="ProjectId" id="2m1kdPRrtreOGEroNFSM4Az39p6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GameTestConsoleLauncher.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Gradle.Build GameProject.executor": "Run",
+    "Gradle.EquationExchangeTest.executor": "Run",
+    "Gradle.EquationExchangeTest.testEquationExchange0.executor": "Run",
+    "Gradle.GameProject [build].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xeq.EquationExchangeConsoleTest.main()].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xeq.EquationExchangeMain.main()].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xeq.EquationExchangeTest.main()].executor": "Debug",
+    "Gradle.GameProject:Bazaar [:Bazaar:xeq.EquationExchangeTestConsoleLauncher.main()].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xeq.EquationExchangeTestLauncher.main()].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xgametest.GameTestConsoleLauncher.main()].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xrules.RuleValidationTestConsoleLauncher.main()].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xstrategy.StrategyTestConsoleLauncher.main()].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xturn.Turn_StateTestConsoleLauncher.main()].executor": "Run",
+    "Gradle.GameProject:Bazaar [:Bazaar:xturn.Turn_StateTestLauncher.main()].executor": "Run",
+    "Gradle.GameTest.executor": "Run",
+    "Gradle.GameTest.testGame0.executor": "Run",
+    "Gradle.GameTest.testGame1.executor": "Run",
+    "Gradle.GameTest.testGame2.executor": "Run",
+    "Gradle.GameTest.testGame3.executor": "Run",
+    "Gradle.GameTest.testGame4.executor": "Run",
+    "Gradle.GameTest.testGame5.executor": "Run",
+    "Gradle.GameTest.testGame6.executor": "Run",
+    "Gradle.GameTest.testGame7.executor": "Run",
+    "Gradle.GameTest.testGame8.executor": "Run",
+    "Gradle.GameTest.testGame9.executor": "Run",
+    "Gradle.Game_StateTest.executor": "Run",
+    "Gradle.Game_StateTest.testGameOverTransition.executor": "Run",
+    "Gradle.Game_StateTest.testInitialStateIsSetup.executor": "Run",
+    "Gradle.Game_StateTest.testNotifyGetPlayerMove.executor": "Run",
+    "Gradle.Game_StateTest.testStateTransitions.executor": "Run",
+    "Gradle.MainTest.executor": "Run",
+    "Gradle.MainTest.test1.executor": "Run",
+    "Gradle.MainTest.test2.executor": "Run",
+    "Gradle.MainTest.test3.executor": "Run",
+    "Gradle.MaxNumCardsStrategyTest.executor": "Run",
+    "Gradle.MaxNumCardsStrategyTest.testMaxCardsStrategyWithEnoughPebbles.executor": "Run",
+    "Gradle.MaxScoreStrategyTest.executor": "Run",
+    "Gradle.MaxScoreStrategyTest.testBestCandidateCalculation1.executor": "Run",
+    "Gradle.MaxScoreStrategyTest.testBestCandidateCalculationWithInsufficientPebbles.executor": "Run",
+    "Gradle.MaxScoreStrategyTest.testBestCandidateCalculationWithMultipleCardPurchases.executor": "Run",
+    "Gradle.MaxScoreStrategyTest.testBestCandidateCalculationWithMultipleTrades.executor": "Run",
+    "Gradle.MaxScoreStrategyTest.testBestCandidateCalculationWithNoCardsAvailable.executor": "Run",
+    "Gradle.MaxScoreStrategyTest.testBestCandidateCalculationWithNoTrades.executor": "Run",
+    "Gradle.PlayerMoveStateTest.executor": "Run",
+    "Gradle.RefereeTest.executor": "Run",
+    "Gradle.RefereeTest.testCanBuyCard.executor": "Run",
+    "Gradle.RefereeTest.testCanUseEquation.executor": "Run",
+    "Gradle.RefereeTest.testExecuteMove.executor": "Run",
+    "Gradle.RefereeTest.testFilterEqSet.executor": "Run",
+    "Gradle.RefereeTest.testGetPlayerMove.executor": "Run",
+    "Gradle.RefereeTest.testGetTurnState.executor": "Run",
+    "Gradle.RefereeTest.testInitGameWithInvalidPlayerCount.executor": "Debug",
+    "Gradle.RefereeTest.testInitGameWithValidPlayerCount.executor": "Debug",
+    "Gradle.RefereeTest.testNotifyAddPlayer.executor": "Run",
+    "Gradle.RefereeTest.testUpdateActivePlayer.executor": "Run",
+    "Gradle.RuleBookTest.executor": "Run",
+    "Gradle.RuleBookTest.testCanBuyCard.executor": "Run",
+    "Gradle.RuleBookTest.testCanUseEquation.executor": "Run",
+    "Gradle.RuleBookTest.testInvalidTurnTooManyEquations.executor": "Run",
+    "Gradle.RuleBookTest.testIsValidTurn.executor": "Run",
+    "Gradle.RuleValidationTest.executor": "Run",
+    "Gradle.RuleValidationTest.testRuleValidation0.executor": "Run",
+    "Gradle.RuleValidationTest.testRuleValidation1.executor": "Run",
+    "Gradle.RuleValidationTest.testRuleValidation2.executor": "Run",
+    "Gradle.StrategyTest.executor": "Run",
+    "Gradle.StrategyTest.testStrategy0.executor": "Run",
+    "Gradle.StrategyTest.testStrategy1.executor": "Debug",
+    "Gradle.StrategyTest.testStrategy2.executor": "Run",
+    "Gradle.StrategyTest.testStrategy3.executor": "Run",
+    "Gradle.TieBreakerTest.executor": "Run",
+    "Gradle.TieBreakerTest.testCardPurchaseTieBreaker1.executor": "Run",
+    "Gradle.Turn_StateTest.executor": "Run",
+    "Gradle.Turn_StateTest.testTurnState0.executor": "Run",
+    "Gradle.Turn_StateTest.testTurnState1.executor": "Run",
+    "Gradle.Turn_StateTest.testTurnState2.executor": "Run",
+    "Gradle.warmup-2:DescendantTree [:DescendantTree:edu.duke.futatsu.warmup2.Main.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/amandamenza/Downloads/ece495/Futatsu/GameProject/Bazaar/src/test/java/jTests/Five",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.33805478",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bazaar/src/test/java/jTests/Five" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Bazaar/src/test/java/jTests/Game" />
+      <recent name="$PROJECT_DIR$/Bazaar/src/test/java/jTests/Six" />
+      <recent name="$PROJECT_DIR$/Bazaar" />
+      <recent name="$PROJECT_DIR$/DescendantTree" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GameTestConsoleLauncher">
+    <configuration name="GameTestConsoleLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xgametest.GameTestConsoleLauncher" />
+      <module name="GameProject.Bazaar.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xgametest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.testGame6" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Bazaar:test" />
+            <option value="--tests" />
+            <option value="&quot;xgametest.GameTest.testGame6&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GameTest.testGame7" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Bazaar:test" />
+            <option value="--tests" />
+            <option value="&quot;xgametest.GameTest.testGame7&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GameTest.testGame8" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Bazaar:test" />
+            <option value="--tests" />
+            <option value="&quot;xgametest.GameTest.testGame8&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GameTest.testGame9" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Bazaar:test" />
+            <option value="--tests" />
+            <option value="&quot;xgametest.GameTest.testGame9&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="warmup-2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="warmup-2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameTestConsoleLauncher" />
+        <item itemvalue="Gradle.GameTest.testGame9" />
+        <item itemvalue="Gradle.GameTest.testGame8" />
+        <item itemvalue="Gradle.GameTest.testGame7" />
+        <item itemvalue="Gradle.GameTest.testGame6" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89d0dd93-7cf1-40ef-ac77-61e82d346498" name="Changes" comment="" />
+      <created>1726251557942</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726251557942</updated>
+      <workItem from="1726251559298" duration="29742000" />
+      <workItem from="1726492519188" duration="1005000" />
+      <workItem from="1726763345594" duration="7422000" />
+      <workItem from="1727214767030" duration="730000" />
+      <workItem from="1727403585260" duration="856000" />
+      <workItem from="1727970438715" duration="2644000" />
+      <workItem from="1728140358376" duration="321000" />
+      <workItem from="1731885249431" duration="57041000" />
+      <workItem from="1733247231580" duration="65298000" />
+      <workItem from="1733857871628" duration="248000" />
+      <workItem from="1733858127272" duration="6109000" />
+      <workItem from="1734009816225" duration="1736000" />
+    </task>
+    <task id="LOCAL-00001" summary="add to command">
+      <option name="closed" value="true" />
+      <created>1726327882447</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726327882448</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix comparator">
+      <option name="closed" value="true" />
+      <created>1726332705836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726332705836</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cleanup comments for method purposes">
+      <option name="closed" value="true" />
+      <created>1726431922753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726431922753</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added 2 test cases and jar file">
+      <option name="closed" value="true" />
+      <created>1726434986921</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726434986921</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update read me">
+      <option name="closed" value="true" />
+      <created>1726444531432</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726444531433</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update while loop based on feedback from warmup 1">
+      <option name="closed" value="true" />
+      <created>1726492740932</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726492740932</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update reading from command line">
+      <option name="closed" value="true" />
+      <created>1726764880432</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726764880432</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update reading from command line">
+      <option name="closed" value="true" />
+      <created>1726765051372</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726765051372</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix command to deal with empty lines. add empty lines to test cases">
+      <option name="closed" value="true" />
+      <created>1726771773638</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726771773638</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix read me path and jar name">
+      <option name="closed" value="true" />
+      <created>1731705078282</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731705078282</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add to command" />
+    <MESSAGE value="fix comparator" />
+    <MESSAGE value="cleanup comments for method purposes" />
+    <MESSAGE value="added 2 test cases and jar file" />
+    <MESSAGE value="update read me" />
+    <MESSAGE value="update while loop based on feedback from warmup 1" />
+    <MESSAGE value="update reading from command line" />
+    <MESSAGE value="fix command to deal with empty lines. add empty lines to test cases" />
+    <MESSAGE value="fix read me path and jar name" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix read me path and jar name" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/test/java/player/strategy/TieBreakerTest.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>264</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>272</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>274</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>275</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>276</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>278</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>280</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>279</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/common/transaction/CardTransaction.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/common/transaction/CardTransaction.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>194</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/referee/Game_State.java</url>
+          <line>325</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/utils/player_utils/PlayerUtils.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/utils/player_utils/PlayerUtils.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/utils/GameStateUtils.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/utils/GameStateUtils.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Bazaar/src/main/java/utils/GameStateUtils.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="171" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GameProject.iml" filepath="$PROJECT_DIR$/.idea/modules/GameProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bazaar/GameProject.Bazaar.iml" filepath="$PROJECT_DIR$/.idea/modules/Bazaar/GameProject.Bazaar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bazaar/GameProject.Bazaar.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Bazaar/GameProject.Bazaar.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bazaar/GameProject.Bazaar.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Bazaar/GameProject.Bazaar.test.iml" />
+    </modules>
+  </component>
+</project>

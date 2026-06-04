@@ -1,0 +1,6 @@
+Enter your text(CTRL+D when finished):
+path from "Anne" to "Dan" is ("mother", "father", "father", "father", "father")
+path from "Anne" to "Lily" is ("mother", "father", "father", "father", "father", "mother", "father")
+path from "Anne" to "Jerry" is ("mother", "mother", "mother")
+path from "Anne" to "Judith" is ("mother", "father", "father", "mother")
+path from "Anne" to "Joey" is ("mother", "father", "father")
