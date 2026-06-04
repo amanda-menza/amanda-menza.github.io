@@ -1,0 +1,138 @@
+{% extends 'base.html' %} {% block content %}
+<div class="navbar">
+  {% if current_user.is_authenticated: %}
+  <div class="btn-group-2" id="btn-group">
+    <button class="button" id="latest">Latest</button>
+    <button class="button" id="rated">Highest Rated</button>
+    <button class="button" id="followers">Followers</button>
+    <button class="button" id="bookmarked">Bookmarked</button>
+    {% else %}
+    <div class="btn-group" id="btn-group">
+      <button class="button" id="latest">Latest</button>
+      <button class="button" id="rated">Highest Rated</button>
+      {% endif %}
+    </div>
+
+    {% if current_user.is_authenticated: %}
+    <div class="feedTitle-2" id="feedTitle">Latest Posts</div>
+    <div class="nav-right">
+      <span>
+        <form action="{{ url_for('main.recipeForm') }}" method="get">
+          <button class="home-newRec">
+            <i class="fa fa-plus-circle"></i> New Recipe
+          </button>
+        </form>
+      </span>
+      <span>
+        <a
+          href="{{ url_for('main.userView', user_id=current_user.id) }}"
+          class="home-profile"
+          >My Profile</a
+        >
+      </span>
+    </div>
+    {% else %}
+    <div class="feedTitle" id="feedTitle">Latest Posts</div>
+    <div class="right-flex"></div>
+  </div>
+  {% endif %}
+</div>
+<div class="feedContent">
+  <div id="time-feed">
+    {% for post in timeFeed %} {% include 'post_template.html' %} {% endfor %}
+  </div>
+  <div id="bookmark-feed">
+    {% for post in bookmarkFeed %} {% include 'post_template.html' %} {% endfor
+    %}
+  </div>
+  <div id="follower-feed">
+    {% for post in followerFeed %} {% include 'post_template.html' %} {% endfor
+    %}
+  </div>
+  <div id="rating-feed">
+    {% for post in ratingFeed %} {% include 'post_template.html' %} {% endfor %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("latest").addEventListener("click", function () {
+      const feedTitle = document.getElementById("feedTitle");
+      if (feedTitle == null) {
+        const feedTitle = document.querySelector(".feedTitle-2");
+      }
+      feedTitle.textContent = "Latest Posts";
+      document.getElementById("time-feed").style.display = "block";
+      document.getElementById("follower-feed").style.display = "none";
+      document.getElementById("bookmark-feed").style.display = "none";
+      document.getElementById("rating-feed").style.display = "none";
+      var buttons = document.querySelectorAll("#btn-group button");
+      var latest = document.getElementById("latest");
+      buttons.forEach(function (button) {
+        button.style.backgroundColor = "#bdd5ea";
+      });
+      latest.style.backgroundColor = "#a9a9a9";
+    });
+    if (!!document.getElementById("followers")) {
+      document
+        .getElementById("followers")
+        .addEventListener("click", function () {
+          const feedTitle = document.getElementById("feedTitle");
+          if (feedTitle == null) {
+            const feedTitle = document.querySelector(".feedTitle-2");
+          }
+          feedTitle.textContent = "Posts from Following";
+          document.getElementById("time-feed").style.display = "none";
+          document.getElementById("follower-feed").style.display = "block";
+          document.getElementById("bookmark-feed").style.display = "none";
+          document.getElementById("rating-feed").style.display = "none";
+          var buttons = document.querySelectorAll("#btn-group button");
+          var followers = document.getElementById("followers");
+          buttons.forEach(function (button) {
+            button.style.backgroundColor = "#bdd5ea";
+          });
+          followers.style.backgroundColor = "#a9a9a9";
+        });
+    }
+    if (!!document.getElementById("bookmarked")) {
+      document
+        .getElementById("bookmarked")
+        .addEventListener("click", function () {
+          const feedTitle = document.getElementById("feedTitle");
+          if (feedTitle == null) {
+            const feedTitle = document.querySelector(".feedTitle-2");
+          }
+          feedTitle.textContent = "Bookmarked Posts";
+          document.getElementById("time-feed").style.display = "none";
+          document.getElementById("follower-feed").style.display = "none";
+          document.getElementById("bookmark-feed").style.display = "block";
+          document.getElementById("rating-feed").style.display = "none";
+          var buttons = document.querySelectorAll("#btn-group button");
+          var bookmarked = document.getElementById("bookmarked");
+          buttons.forEach(function (button) {
+            button.style.backgroundColor = "#bdd5ea";
+          });
+          bookmarked.style.backgroundColor = "#a9a9a9";
+        });
+    }
+    document.getElementById("rated").addEventListener("click", function () {
+      const feedTitle = document.getElementById("feedTitle");
+      if (feedTitle == null) {
+        const feedTitle = document.querySelector(".feedTitle-2");
+      }
+      feedTitle.textContent = "Highest Rated Posts";
+
+      document.getElementById("time-feed").style.display = "none";
+      document.getElementById("follower-feed").style.display = "none";
+      document.getElementById("bookmark-feed").style.display = "none";
+      document.getElementById("rating-feed").style.display = "block";
+      var buttons = document.querySelectorAll("#btn-group button");
+      var rated = document.getElementById("rated");
+      buttons.forEach(function (button) {
+        button.style.backgroundColor = "#bdd5ea";
+      });
+      rated.style.backgroundColor = "#a9a9a9";
+    });
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,20 @@
+<div class="postFeed">
+  <div class="user-info">
+    <a href="{{ url_for('main.userView', user_id=photo.user.id) }}"
+      ><div class="user-info">@{{ photo.user.name }}</div></a
+    >
+  </div>
+  <img
+    class="post-img"
+    src="{{ url_for('static', filename='photos/photo-' ~ photo.id ~ '.' ~ photo.file_extension) }}"
+    alt="Recipe Post"
+  />
+  {% if current_user.id == photo.user.id %}
+  <form
+    action="{{ url_for('main.removePhoto', photo_id=photo.id,recipe_id=photo.recipe_id,file_ext=photo.file_extension) }}"
+    method="post"
+  >
+    <button class="delete-btn"><i class="fa fa-trash-o"></i></button>
+  </form>
+  {% endif %}
+</div>

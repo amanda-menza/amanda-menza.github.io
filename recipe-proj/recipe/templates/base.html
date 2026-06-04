@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Recipe App</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <header class="main-head">
+    <div class="btn-group">
+      {% if current_user.is_authenticated: %}
+      <span>
+        <h4 class="username">@{{current_user.name}}</h4>
+      </span>
+      <span>
+        <a class="log" href="{{ url_for('auth.logout') }}"
+          ><small>Logout</small></a
+        >
+      </span>
+      {% else %}
+      <span>
+        <a class="log" href="{{ url_for('auth.login') }}"
+          ><small>Log In</small></a
+        >
+      </span>
+      {% endif %}
+      <a class="home-icon" href="{{ url_for('main.home') }}"
+        ><i class="fa fa-home"></i
+      ></a>
+    </div>
+    <a href="{{ url_for('main.home') }}"
+      ><img
+        class="logo-img"
+        src="{{ url_for('static', filename='logo.png') }}"
+        alt="logo"
+    /></a>
+    <div class="right-flex">
+      <form action="{{ url_for('main.buyPage') }}">
+        <button class="buy-btn"><i class="fa fa-shopping-bag"></i> Buy</button>
+      </form>
+    </div>
+  </header>
+
+  <body>
+    {% block content %}{% endblock %}
+    <footer class="homeFooter">
+      <small>Developed for Web applications</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+{% extends 'base.html' %} {% block content %}
+<section class="profile-head">
+  <span class="info">
+    <h3 class="text">Profile</h3>
+    <h2 class="text">@{{user.name}}</h2>
+  </span>
+  <span class="followings">
+    <table class="follow-table">
+      <tr>
+        <th class="followtext">
+          <a
+            class="followtext"
+            href="{{ url_for('main.followingView', user_id=user.id) }}"
+            >Following</a
+          >
+        </th>
+        <th class="followtext">
+          <a
+            class="followtext"
+            href="{{ url_for('main.followersView', user_id=user.id) }}"
+            >Followers</a
+          >
+        </th>
+      </tr>
+      <tr>
+        <td>{{user.following|length}}</td>
+        <td>{{user.followers|length}}</td>
+      </tr>
+    </table>
+    {% if followBtn == "follow" %}
+    <form action="{{ url_for('main.follow', user_id=user.id) }}" method="post">
+      <button class="follow-btn"><i class="fa fa-plus"></i> Follow</button>
+    </form>
+    {% endif %} {%if followBtn == "unfollow" %}
+    <form
+      action="{{ url_for('main.unfollow', user_id=user.id) }}"
+      method="post"
+    >
+      <button class="follow-btn"><i class="fa fa-plus"></i> Unfollow</button>
+    </form>
+    {% endif %}
+  </span>
+</section>
+<section class="navbar">
+  <div class="btn-group">
+    <button class="button" id="profile-recipes">Recipes</button>
+    <button class="button" id="profile-photos">Photos</button>
+    {% if authenticated %}
+    <button class="button" id="profile-bookmarks">Bookmarks</button>
+    {% endif %}
+  </div>
+  <div class="feedTitle">User Recipes</div>
+  <div class="right-flex"></div>
+</section>
+<div id="recipeFeed">
+  {% for post in recipes %} {% include 'post_template.html' %} {% endfor %}
+</div>
+<div id="photoFeed">
+  {% for photo in photos %} {% include 'photo_template.html' %} {% endfor %}
+</div>
+<div id="bookmarkFeed">
+  {% if bookmarks %} {% for post in bookmarks %} {% include 'post_template.html'
+  %} {% endfor %}{% endif %}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document
+      .getElementById("profile-recipes")
+      .addEventListener("click", function () {
+        const feedTitle = document.querySelector(".feedTitle");
+        feedTitle.textContent = "User Recipes";
+        document.getElementById("recipeFeed").style.display = "block";
+        document.getElementById("photoFeed").style.display = "none";
+        document.getElementById("bookmarkFeed").style.display = "none";
+        var buttons = document.querySelectorAll(".btn-group button");
+        var recipes = document.getElementById("profile-recipes");
+        buttons.forEach(function (button) {
+          button.style.backgroundColor = "#bdd5ea";
+        });
+        recipes.style.backgroundColor = "#a9a9a9";
+      });
+
+    document
+      .getElementById("profile-photos")
+      .addEventListener("click", function () {
+        const feedTitle = document.querySelector(".feedTitle");
+        feedTitle.textContent = "User Photos";
+        document.getElementById("recipeFeed").style.display = "none";
+        document.getElementById("photoFeed").style.display = "block";
+        document.getElementById("bookmarkFeed").style.display = "none";
+        var buttons = document.querySelectorAll(".btn-group button");
+        var photos = document.getElementById("profile-photos");
+        buttons.forEach(function (button) {
+          button.style.backgroundColor = "#bdd5ea";
+        });
+        photos.style.backgroundColor = "#a9a9a9";
+      });
+    if (!!document.getElementById("profile-bookmarks")) {
+      document
+        .getElementById("profile-bookmarks")
+        .addEventListener("click", function () {
+          const feedTitle = document.querySelector(".feedTitle");
+          feedTitle.textContent = "User bookmarks";
+          document.getElementById("recipeFeed").style.display = "none";
+          document.getElementById("photoFeed").style.display = "none";
+          document.getElementById("bookmarkFeed").style.display = "block";
+          var buttons = document.querySelectorAll(".btn-group button");
+          var bookmarks = document.getElementById("profile-bookmarks");
+          buttons.forEach(function (button) {
+            button.style.backgroundColor = "#bdd5ea";
+          });
+          bookmarks.style.backgroundColor = "#a9a9a9";
+        });
+    }
+  });
+</script>
+
+{% endblock %}

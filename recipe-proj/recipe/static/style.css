@@ -1,0 +1,389 @@
+body {
+  margin-bottom: 70px;
+  background-color: #fef2ff;
+}
+.log,
+.username {
+  justify-content: flex-start;
+  color: #415d78;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.logo-img {
+  width: 150px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  margin: 0 auto;
+}
+.main-head {
+  height: 100px;
+  border: 3px solid #415d78;
+  margin-bottom: 4px;
+  display: flex;
+}
+.buy-btn {
+  float: right;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #415d78;
+  color: #bdd5ea;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  align-items: center;
+  height: 60px;
+}
+.right-flex,
+.btn-group {
+  flex: 1;
+}
+.feedTitle-2 {
+  margin-right: 290px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.form-textarea {
+  width: 80%;
+}
+
+.btn-group .button,
+.btn-group-2 .button {
+  background-color: #bdd5ea;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 3px;
+}
+.nav-right span {
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+.home-profile {
+  color: #bdd5ea;
+  display: inline;
+}
+.home-icon {
+  color: #415d78;
+  margin: 10px;
+  font-size: 20px;
+  justify-content: flex-start;
+}
+.home-newRec,
+.follow-btn,
+.photo-btn,
+.buy-btn {
+  background-color: #bdd5ea;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  display: inline;
+}
+.feedTitle {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.btn-group .button:hover,
+.btn-group-2 .button:hover {
+  background-color: #a9a9a9;
+}
+.btn-group .button:first-child,
+.btn-group-2 .button:first-child {
+  background-color: #a9a9a9;
+}
+
+.postFeed {
+  border: 2px solid #415d78;
+  padding: 15px;
+  width: 30%;
+  margin: auto;
+  background: #bdd5ea;
+  color: #415d78;
+  margin-top: 5px;
+}
+.postFeed .user-info {
+  color: #415d78;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+.recipe-post {
+  background-color: #415d78;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60vw;
+}
+.main-container {
+  margin: 20px;
+  background-color: #bdd5ea;
+  border-radius: 12px;
+  flex: 0 0 94%;
+}
+.ingredient-container {
+  background-color: #bdd5ea;
+  border-radius: 12px;
+  flex: 0 0 45%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.step-container {
+  background-color: #bdd5ea;
+  border-radius: 12px;
+  flex: 0 0 45%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.step-list {
+  margin: 8px;
+}
+.recipe-actions span {
+  display: inline-block;
+  text-align: center;
+  flex: 0 0 100%;
+  margin-bottom: 20px;
+}
+.bookmark-btn,
+.rate-btn,
+.view-btn {
+  background-color: #bdd5ea;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  display: inline;
+  text-decoration: none;
+}
+
+.recipe-title,
+.user-info,
+.avgRating,
+.cooktime,
+.servings,
+.postDescription {
+  text-align: center;
+  color: black;
+}
+.recipe-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.postDescription {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.avgRating,
+.cooktime,
+.servings {
+  font-size: 12px;
+}
+.commentsTitle {
+  text-align: center;
+  color: #415d78;
+  font-weight: bold;
+}
+.profile-head {
+  border: 3px solid #415d78;
+  color: #415d78;
+  display: flex;
+  flex-direction: row;
+}
+.proile-head span {
+  display: inline-block;
+}
+.follow-table {
+  background-color: #415d78;
+  border-radius: 12px;
+  margin-top: 15px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+.follow-table td,
+.followtext {
+  color: #bdd5ea;
+  text-decoration: none;
+  text-align: center;
+}
+.follow-table td {
+  font-size: 25px;
+  padding-top: 0px;
+  padding: 8px;
+}
+.followtext {
+  padding: 8px;
+  padding-bottom: 0px;
+}
+.follow-btn {
+  background-color: #bdd5ea;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  margin-left: 115px;
+}
+.info {
+  margin-left: 30px;
+}
+.info h3 {
+  margin-left: 30px;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+.info h2 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#photoFeed,
+#bookmarkFeed,
+#follower-feed,
+#rating-feed {
+  display: none;
+}
+#recipeFeed,
+#recipe-feed,
+#time-feed {
+  display: block;
+}
+.profileFeed-head {
+  background-color: #415d78;
+  color: #bdd5ea;
+  height: 80px;
+}
+.auth-form {
+  background-color: #415d78;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60vw;
+  padding: 15px;
+  color: #bdd5ea;
+}
+.inForm div {
+  margin-top: 10px;
+}
+.login-signup {
+  color: #bdd5ea;
+  text-align: center;
+  display: inline;
+
+  margin-left: 115px;
+}
+.form {
+  background-color: #415d78;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  width: 60vw;
+  padding: 25px;
+  color: #bdd5ea;
+}
+.form div {
+  margin: 10px;
+}
+#addIngredient,
+#removeIngredient,
+#addStep,
+#removeStep,
+.form-submit,
+.profile-back {
+  background-color: #bdd5ea;
+  color: black;
+  border-radius: 8px;
+}
+.form-submit {
+  font-size: 14px;
+}
+.form-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+.grid-item {
+  border: 2px solid #333;
+  overflow: hidden;
+}
+
+.merch-img {
+  display: block;
+  margin: auto;
+  height: 350px;
+  width: 350px;
+}
+.grid-item div {
+  text-align: center;
+  font-weight: bold;
+  background-color: #bdd5ea;
+}
+.delete-btn,
+.edit-btn {
+  background-color: transparent;
+}
+.edit-actions .delete-btn,
+.edit-btn {
+  color: white;
+}
+.edit-actions span {
+  display: inline-block;
+  text-align: right;
+  flex: 1 0 100%;
+  margin-bottom: 20px;
+}
+footer {
+  background-color: #415d78;
+  color: #bdd5ea;
+  background-attachment: scroll;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding-top: 20px;
+  padding-left: 15px;
+}

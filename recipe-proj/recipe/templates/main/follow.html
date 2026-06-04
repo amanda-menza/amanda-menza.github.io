@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<header>
+  <a class="profile-back" href="{{ url_for('main.userView', user_id=user.id) }}"
+    ><label><i class="fa fa-arrow-left"></i> Profile</label></a
+  >
+</header>
+{% for follow in follows %}
+<div class="postFeed">
+  <a href="{{ url_for('main.userView', user_id=follow.id) }}"
+    ><div class="user-info">{{ follow.email }}</div></a
+  >
+</div>
+{% endfor %}{% endblock %}
