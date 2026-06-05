@@ -26,4 +26,4 @@ Some APT platforms call methods directly rather than using a `main` method, so l
 
 - Keep `.java` source files in git.
 - Do not commit generated `.class` files.
-- The folder was renamed from ` APTs: Java` to `APTs-Java` for easier shell navigation and cleaner links.
+- The folder uses a descriptive, hyphenated name for easier shell navigation and cleaner links.
